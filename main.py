@@ -7,7 +7,7 @@ from motor.motor_asyncio import AsyncIOMotorClient
 from router import router 
 
 # Create FastAPI app instance
-app = FastAPI()
+app = FastAPI(root_path="/teacher")
 
 # Create middleware to attach session_db to request
 class SessionDBMiddleware(BaseHTTPMiddleware):
